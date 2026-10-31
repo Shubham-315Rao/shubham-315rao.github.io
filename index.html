@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Caramel Crushers – a sweet match-3 puzzle game</title>
+<meta name="description" content="Caramel Crushers is a free match-3 puzzle game for Android, iPhone and iPad. Match candies, beat thousands of levels and collect rewards.">
+<meta property="og:title" content="Caramel Crushers – a sweet match-3 puzzle game">
+<meta property="og:description" content="Caramel Crushers is a free match-3 puzzle game for Android, iPhone and iPad. Match candies, beat thousands of levels and collect rewards.">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
+<style>
+:root {
+  --bg: #fff8ef;
+  --card: #ffffff;
+  --ink: #2b1b12;
+  --muted: #6b5446;
+  --accent: #a3540f;
+  --line: #f1e1cc;
+  --pink: #e5487f;
+  --orange: #f29a2e;
+  --purple: #7a3ec8;
+  --button: #2b1b12;
+  --button-ink: #ffffff;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 17px/1.6 ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, -apple-system,
+        "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+a { color: var(--accent); text-underline-offset: 2px; }
+a:hover { color: var(--pink); }
+.wrap { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+.site-header {
+  background: var(--card);
+  border-bottom: 1px solid var(--line);
+}
+.site-header .wrap {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 12px; min-height: 64px; flex-wrap: wrap;
+}
+.brand {
+  display: flex; align-items: center; gap: 10px;
+  color: var(--ink); text-decoration: none; font-weight: 800; font-size: 18px;
+}
+.brand img { width: 36px; height: 36px; border-radius: 9px; }
+.site-header nav { display: flex; gap: 18px; font-size: 15px; }
+.site-header nav a { color: var(--muted); text-decoration: none; font-weight: 600; }
+.site-header nav a:hover { color: var(--pink); }
+.hero {
+  position: relative; overflow: hidden; text-align: center;
+  padding: 56px 0 48px;
+}
+.hero::before {
+  content: ""; position: absolute; inset: -40% -20% auto; height: 120%;
+  background:
+    radial-gradient(closest-side, rgba(242,154,46,0.28), transparent) 20% 40% / 55% 70% no-repeat,
+    radial-gradient(closest-side, rgba(229,72,127,0.22), transparent) 55% 30% / 55% 70% no-repeat,
+    radial-gradient(closest-side, rgba(122,62,200,0.20), transparent) 85% 45% / 55% 70% no-repeat;
+  z-index: -1;
+}
+.hero-icon {
+  width: 160px; height: 160px; border-radius: 36px;
+  box-shadow: 0 12px 32px rgba(122, 62, 200, 0.25), 0 2px 6px rgba(43, 27, 18, 0.15);
+}
+h1 {
+  font-size: clamp(34px, 7vw, 48px); line-height: 1.1; margin: 22px 0 10px; font-weight: 900;
+  letter-spacing: -0.5px;
+}
+.tagline { font-size: 19px; color: var(--muted); margin: 0 auto 26px; max-width: 520px; }
+.stores { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+.store {
+  display: inline-flex; flex-direction: column; align-items: flex-start;
+  background: var(--button); color: var(--button-ink); text-decoration: none;
+  padding: 10px 22px; border-radius: 14px; min-width: 200px; line-height: 1.25;
+}
+.store small { font-size: 12px; opacity: 0.85; }
+.store strong { font-size: 18px; }
+.store:hover, .store:focus { color: var(--button-ink); background: #4a2f20; }
+main section.card {
+  background: var(--card); border: 1px solid var(--line); border-radius: 18px;
+  padding: 22px 24px; margin: 0 0 18px;
+}
+h2 { font-size: 22px; line-height: 1.25; margin: 0 0 10px; color: var(--accent); }
+.card p { margin: 0 0 12px; }
+.card p:last-child { margin-bottom: 0; }
+.features { list-style: none; padding: 0; margin: 12px 0 0; }
+.features li { position: relative; padding-left: 28px; margin: 0 0 10px; }
+.features li::before {
+  content: ""; position: absolute; left: 4px; top: 0.5em; width: 12px; height: 12px; border-radius: 50%;
+  background: var(--orange);
+}
+.features li:nth-child(2)::before { background: var(--pink); }
+.features li:nth-child(3)::before { background: var(--purple); }
+.features li:nth-child(4)::before { background: #2fa36b; }
+.site-footer {
+  border-top: 1px solid var(--line); margin-top: 36px; padding: 22px 0 36px;
+  color: var(--muted); font-size: 14px; text-align: center;
+}
+.site-footer nav { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 8px; }
+/* Privacy policy */
+.doc { padding: 36px 0 8px; }
+.doc h1 { margin-top: 0; }
+.doc .lead { color: var(--muted); margin: 0 0 24px; }
+.doc .card h2 { margin-top: 0; }
+.doc article h2 { margin: 30px 0 10px; }
+.doc article h2:first-of-type { margin-top: 0; }
+.doc article { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 24px; }
+.doc article ul { padding-left: 22px; }
+.doc article li { margin: 0 0 8px; }
+.doc a { overflow-wrap: anywhere; }
+@media (max-width: 480px) {
+  body { font-size: 16px; }
+  .site-header nav { gap: 14px; }
+  main section.card, .doc article { padding: 18px; }
+  .store { width: 100%; }
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="icon.png" alt="" width="36" height="36">Caramel Crushers</a>
+    <nav aria-label="Site">
+      <a href="./">Home</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="mailto:shubhamvivekrao315@gmail.com">Contact</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <div class="hero">
+    <div class="wrap">
+      <img class="hero-icon" src="icon.png" alt="Caramel Crushers app icon" width="160" height="160">
+      <h1>Caramel Crushers</h1>
+      <p class="tagline">A sweet match-3 puzzle game. Free to play on Android, iPhone and iPad.</p>
+      <div class="stores">
+        <a class="store" href="https://play.google.com/store/apps/details?id=com.StaramanGamesStudios.CaramelCrushers"><small>Get it on</small><strong>Google Play</strong></a>
+        <a class="store" href="https://apps.apple.com/app/id6798685894"><small>Download on the</small><strong>App Store</strong></a>
+      </div>
+    </div>
+  </div>
+  <div class="wrap">
+    <section class="card">
+      <h2>About the game</h2>
+      <p>Caramel Crushers is a match-3 puzzle game. Swap neighbouring candies to line up three or more of the
+        same kind, reach each level's goal before you run out of moves or time, and travel along the map to the
+        next level.</p>
+      <ul class="features">
+        <li><strong>Thousands of levels</strong> that get trickier as you go.</li>
+        <li><strong>Boosters</strong> for tough spots, and <strong>lives</strong> that refill over time.</li>
+        <li><strong>A daily bonus and a spin wheel</strong> with free coins and rewards.</li>
+        <li><strong>Invite friends</strong> with your own code and earn coins when they join.</li>
+      </ul>
+    </section>
+    <section class="card">
+      <h2>Ads and purchases</h2>
+      <p>The game is free to play. It shows rewarded videos only: you watch one only when you choose to, in
+        exchange for a reward such as unlocking more levels, extra moves, coins, a booster, a life or an extra
+        spin. There are no banner ads and no forced ads.</p>
+      <p>Coin packs are available as optional in-app purchases.</p>
+    </section>
+    <section class="card">
+      <h2>Saving your progress and signing in</h2>
+      <p>You can play the whole game without signing in, and your progress is saved automatically. Signing in is
+        optional: it keeps your progress and coins safe when you change or lose your phone. On Android you can
+        sign in with Google Play Games or Google; on iPhone and iPad, with Apple or Google.</p>
+      <p>If you sign in with Google, Caramel Crushers receives your Google account ID, name, email address and
+        profile picture link. They are used only to sign you in, to show which account you are using, and to
+        save your progress. They are never used for advertising and never sold. Full details are in our
+        <a href="privacy-policy.html">Privacy Policy</a>.</p>
+      <p>You can delete your account at any time in the game (tap the @ button, then &ldquo;Delete account&rdquo;)
+        or by following <a href="https://sites.google.com/view/caramelcrushers-data-deletion">these instructions</a>.</p>
+    </section>
+    <section class="card" id="contact">
+      <h2>Contact</h2>
+      <p>Questions, feedback or a problem with the game? Email
+        <a href="mailto:shubhamvivekrao315@gmail.com">shubhamvivekrao315@gmail.com</a>.</p>
+    </section>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <nav aria-label="Footer">
+      <a href="./">Home</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="https://sites.google.com/view/caramelcrushers-data-deletion">Delete your account</a>
+      <a href="mailto:shubhamvivekrao315@gmail.com">shubhamvivekrao315@gmail.com</a>
+    </nav>
+    <p>&copy; 2026 Caramel Crushers</p>
+  </div>
+</footer>
+</body>
+</html>

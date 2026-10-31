@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy – Caramel Crushers</title>
+<meta name="description" content="How the Caramel Crushers game collects, uses, shares and protects your information, including Google sign-in data.">
+<meta property="og:title" content="Privacy Policy – Caramel Crushers">
+<meta property="og:description" content="How the Caramel Crushers game collects, uses, shares and protects your information, including Google sign-in data.">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
+<style>
+:root {
+  --bg: #fff8ef;
+  --card: #ffffff;
+  --ink: #2b1b12;
+  --muted: #6b5446;
+  --accent: #a3540f;
+  --line: #f1e1cc;
+  --pink: #e5487f;
+  --orange: #f29a2e;
+  --purple: #7a3ec8;
+  --button: #2b1b12;
+  --button-ink: #ffffff;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 17px/1.6 ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, -apple-system,
+        "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+a { color: var(--accent); text-underline-offset: 2px; }
+a:hover { color: var(--pink); }
+.wrap { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+.site-header {
+  background: var(--card);
+  border-bottom: 1px solid var(--line);
+}
+.site-header .wrap {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 12px; min-height: 64px; flex-wrap: wrap;
+}
+.brand {
+  display: flex; align-items: center; gap: 10px;
+  color: var(--ink); text-decoration: none; font-weight: 800; font-size: 18px;
+}
+.brand img { width: 36px; height: 36px; border-radius: 9px; }
+.site-header nav { display: flex; gap: 18px; font-size: 15px; }
+.site-header nav a { color: var(--muted); text-decoration: none; font-weight: 600; }
+.site-header nav a:hover { color: var(--pink); }
+.hero {
+  position: relative; overflow: hidden; text-align: center;
+  padding: 56px 0 48px;
+}
+.hero::before {
+  content: ""; position: absolute; inset: -40% -20% auto; height: 120%;
+  background:
+    radial-gradient(closest-side, rgba(242,154,46,0.28), transparent) 20% 40% / 55% 70% no-repeat,
+    radial-gradient(closest-side, rgba(229,72,127,0.22), transparent) 55% 30% / 55% 70% no-repeat,
+    radial-gradient(closest-side, rgba(122,62,200,0.20), transparent) 85% 45% / 55% 70% no-repeat;
+  z-index: -1;
+}
+.hero-icon {
+  width: 160px; height: 160px; border-radius: 36px;
+  box-shadow: 0 12px 32px rgba(122, 62, 200, 0.25), 0 2px 6px rgba(43, 27, 18, 0.15);
+}
+h1 {
+  font-size: clamp(34px, 7vw, 48px); line-height: 1.1; margin: 22px 0 10px; font-weight: 900;
+  letter-spacing: -0.5px;
+}
+.tagline { font-size: 19px; color: var(--muted); margin: 0 auto 26px; max-width: 520px; }
+.stores { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+.store {
+  display: inline-flex; flex-direction: column; align-items: flex-start;
+  background: var(--button); color: var(--button-ink); text-decoration: none;
+  padding: 10px 22px; border-radius: 14px; min-width: 200px; line-height: 1.25;
+}
+.store small { font-size: 12px; opacity: 0.85; }
+.store strong { font-size: 18px; }
+.store:hover, .store:focus { color: var(--button-ink); background: #4a2f20; }
+main section.card {
+  background: var(--card); border: 1px solid var(--line); border-radius: 18px;
+  padding: 22px 24px; margin: 0 0 18px;
+}
+h2 { font-size: 22px; line-height: 1.25; margin: 0 0 10px; color: var(--accent); }
+.card p { margin: 0 0 12px; }
+.card p:last-child { margin-bottom: 0; }
+.features { list-style: none; padding: 0; margin: 12px 0 0; }
+.features li { position: relative; padding-left: 28px; margin: 0 0 10px; }
+.features li::before {
+  content: ""; position: absolute; left: 4px; top: 0.5em; width: 12px; height: 12px; border-radius: 50%;
+  background: var(--orange);
+}
+.features li:nth-child(2)::before { background: var(--pink); }
+.features li:nth-child(3)::before { background: var(--purple); }
+.features li:nth-child(4)::before { background: #2fa36b; }
+.site-footer {
+  border-top: 1px solid var(--line); margin-top: 36px; padding: 22px 0 36px;
+  color: var(--muted); font-size: 14px; text-align: center;
+}
+.site-footer nav { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 8px; }
+/* Privacy policy */
+.doc { padding: 36px 0 8px; }
+.doc h1 { margin-top: 0; }
+.doc .lead { color: var(--muted); margin: 0 0 24px; }
+.doc .card h2 { margin-top: 0; }
+.doc article h2 { margin: 30px 0 10px; }
+.doc article h2:first-of-type { margin-top: 0; }
+.doc article { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 24px; }
+.doc article ul { padding-left: 22px; }
+.doc article li { margin: 0 0 8px; }
+.doc a { overflow-wrap: anywhere; }
+@media (max-width: 480px) {
+  body { font-size: 16px; }
+  .site-header nav { gap: 14px; }
+  main section.card, .doc article { padding: 18px; }
+  .store { width: 100%; }
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="icon.png" alt="" width="36" height="36">Caramel Crushers</a>
+    <nav aria-label="Site">
+      <a href="./">Home</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="mailto:shubhamvivekrao315@gmail.com">Contact</a>
+    </nav>
+  </div>
+</header>
+<main class="doc">
+  <div class="wrap">
+    <h1>Privacy Policy</h1>
+    <p class="lead">Caramel Crushers, on Google Play and the Apple App Store.</p>
+    <article>
+<p><strong>Operator:</strong> VIVEKRAO GOVINDARAO ANNA<br>
+<strong>Contact:</strong> <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#104;&#117;&#98;&#104;&#97;&#109;&#118;&#105;&#118;&#101;&#107;&#114;&#97;&#111;&#51;&#49;&#53;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#115;&#104;&#117;&#98;&#104;&#97;&#109;&#118;&#105;&#118;&#101;&#107;&#114;&#97;&#111;&#51;&#49;&#53;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a><br>
+<strong>Effective date:</strong> 30 October 2026</p>
+<p>This policy explains what Caramel Crushers ("the Game") collects, why, and what you can do about it. It applies to the Game on both Google Play and the Apple App Store.</p>
+<h2>In short</h2>
+<ul>
+<li>You can play the whole Game without signing in and without giving us your name or email.</li>
+<li>Signing in is optional. It exists so your progress and coins survive changing or losing your phone.</li>
+<li>The Game shows rewarded ads only — short videos you choose to watch in exchange for a reward. There are no forced ads, no banners, and no ads between levels.</li>
+<li>We do not sell your personal information for money, and you can control personalised ads (section 4).</li>
+<li>If you sign in with Google, we use your Google account information only to sign you in and keep your progress (section 2).</li>
+<li>You can delete your account and the data stored with it at any time. A few records that stop rewards being claimed twice are kept, as explained in section 14.</li>
+</ul>
+<h2>1. Information collected automatically</h2>
+<p>Whether or not you sign in, the Game and the services it uses collect:</p>
+<ul>
+<li>A device identifier generated by your operating system, used to recognise the device your save belongs to and to prevent duplicate coin awards.</li>
+<li>The advertising ID on your device (the Android advertising ID), used by Google, Unity and Meta as described in sections 4 to 6. On iPhone and iPad the Game does not ask for permission to track you, so Apple's advertising identifier (IDFA) is not available to the Game or its partners.</li>
+<li>App activity — which levels you play and complete, your scores and stars, boosters and lives used, coins earned and spent, and when you last played.</li>
+<li>Technical and diagnostic information — app version, operating system, device model, crash and performance data, and your IP address, from which an approximate (city-level) location may be estimated.</li>
+</ul>
+<h2>2. Information you provide by signing in</h2>
+<p>Signing in is optional and can be skipped. On Android you can sign in with Google Play Games or with Google. On iPhone and iPad you can use Sign in with Apple or Google. If you choose to sign in:</p>
+<ul>
+<li>With Google Play Games (Android): we receive an account identifier and your Play Games display name (for example, "TemperedVideo93"). Google Play Games does not give us your email address.</li>
+<li>With Google (Android, iPhone and iPad): we receive an account identifier, your name and your email address, and a link to your profile picture if your Google account has one.</li>
+<li>With Sign in with Apple (iPhone and iPad): we receive an account identifier, your name, and an email address. If you use Apple's "Hide My Email", we only ever see the relay address Apple generates — never your real one.</li>
+</ul>
+<p>You can add more than one sign-in method to the same account with "Add a login" — for example, so you can also play on a different kind of phone. We then receive the information above for each method you add.</p>
+<p>We do not ask for, and cannot see, your password for any of these methods.</p>
+<p><strong>How we use Google user data.</strong> If you sign in with Google, the Game uses the information Google provides — your Google account identifier, name, email address and profile picture link — only to sign you in, to show you which account you are signed in with, and to save and restore your progress on your devices. It is stored with your player account in Google Firebase Authentication, which processes it on our behalf, and it is deleted when you delete your account (sections 13 and 14). We do not use it for advertising, we do not share it with our advertising partners or anyone else, and we do not sell it. The Game's use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+<h2>3. Your game progress and the cloud save</h2>
+<p>When you first open the Game, it creates an anonymous player account for you with Google Firebase. It has a random identifier and no name or email. Your progress is kept on your device and saved in the cloud under that identifier, using Google Firebase (Cloud Firestore). If you sign in, the same progress is linked to your sign-in, so you can restore it on another device.</p>
+<p>The saved record contains:</p>
+<ul>
+<li>the level you have reached, and the highest level unlocked to you</li>
+<li>your stars and scores for each level</li>
+<li>your coin balance, boosters, lives and their refill timer</li>
+<li>your chosen avatar, daily bonus day, spin-wheel counters and last-spin times, and similar counters for the Game's daily rewards</li>
+<li>a record of coin transactions (amount, reason, and time), which prevents a purchase or reward from being granted twice</li>
+<li>the identifier of the device that last saved, the platforms you have played on, and when the record was last updated</li>
+<li>technical values used to combine progress saved on different devices</li>
+</ul>
+<h2>4. Advertising</h2>
+<p>The Game shows rewarded video ads only. You only ever see one after choosing to watch it.</p>
+<p>The ads are served by Google AdMob. Through AdMob's mediation, Unity Ads (operated by Unity Technologies) can also compete to supply the ad you choose to watch.</p>
+<p>Google's advertising SDK collects, and shares with Google's advertising network:</p>
+<ul>
+<li>your device's advertising ID and app set ID</li>
+<li>ad interactions — that an ad was requested, shown, watched or closed</li>
+<li>diagnostic information — such as load times and performance metrics</li>
+<li>your IP address, from which an approximate location may be estimated</li>
+</ul>
+<p>Google uses this to select and measure ads, to limit how often you see the same ad, and to detect invalid traffic and fraud. Google's own description of what its advertising SDK collects is at <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">https://developers.google.com/admob/android/privacy/play-data-disclosure</a> and how Google uses data from partner apps is at <a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a></p>
+<p>Unity Ads collects similar information — device identifiers including the advertising ID, device information, your IP address and the approximate location estimated from it, and how you interact with its ads. Unity uses it to show and measure ads, to personalise them where you allow it, and to detect fraud. Unity describes this in its Game Player and App User Privacy Policy: <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">https://unity.com/legal/game-player-and-app-user-privacy-policy</a></p>
+<p><strong>Your choice.</strong> If you are in the European Economic Area, the United Kingdom or Switzerland, the Game shows you a consent screen the first time it runs. It lists our advertising partners, including Google and Unity Ads, and you decide whether ads may be personalised. If you live in a US state whose privacy law lets you opt out of the "sale" or "sharing" of personal information or of targeted advertising, you can opt out in the Game, and the Game passes your choice on to Google and Unity Ads. To review or change your choice, open the Game's Settings, tap the "i" button, then "Ad privacy" (this option appears where these laws apply), or email us at <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#104;&#117;&#98;&#104;&#97;&#109;&#118;&#105;&#118;&#101;&#107;&#114;&#97;&#111;&#51;&#49;&#53;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#115;&#104;&#117;&#98;&#104;&#97;&#109;&#118;&#105;&#118;&#101;&#107;&#114;&#97;&#111;&#51;&#49;&#53;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a>.</p>
+<p>You can also reset or disable your advertising ID at the operating-system level:</p>
+<ul>
+<li>Android: Settings → Google → Ads</li>
+<li>iOS: Settings → Privacy &amp; Security → Tracking</li>
+</ul>
+<h2>5. Analytics and measuring our own advertising</h2>
+<p>The Game uses Google Firebase Analytics to understand how the Game is used in aggregate — for example, how many players a feature reaches, or how often a cloud save conflict occurs. The events the Game sends are short event names, sometimes with one simple detail such as which sign-in button was used; we never attach your name, email, or account identifier to them.</p>
+<p>Firebase Analytics also collects some information automatically: an identifier for your installation of the Game, the Android advertising ID, device and app information, your approximate location (estimated from your IP address), when you first open the Game, in-app purchases, and the rewarded ads you are shown and rewarded for.</p>
+<p>We link Firebase Analytics to Google Ads so that we can measure our own advertising for the Game — for example, how many people installed the Game after seeing one of our ads. On iPhone and iPad, where the Game does not use Apple's advertising identifier, this measurement relies on Apple's SKAdNetwork and Google's on-device conversion measurement.</p>
+<h2>6. Measuring our own ads on Facebook and Instagram (Meta)</h2>
+<p>We sometimes advertise the Game on Facebook and Instagram. To measure those ads, the Game includes Meta's software development kit (SDK), from Meta Platforms. It is used for measurement only: there is no Facebook Login and there are no Meta ads in the Game.</p>
+<p>Where it is switched on, the SDK sends Meta: that the Game was installed and opened; on iPhone and iPad, in-app purchases (the item, price and currency — never your payment details); the advertising ID (Android only); an identifier the SDK creates for your installation of the Game; and device and app information such as device model, operating system, language, time zone and app version, together with your IP address. Meta uses this to tell us how many people installed or used the Game after seeing our ads. Meta's own use of this data is described in its privacy policy: <a href="https://www.facebook.com/privacy/policy/">https://www.facebook.com/privacy/policy/</a></p>
+<p><strong>Where it is switched off.</strong> The Game keeps Meta's measurement switched off — no installs, app opens or purchases are reported, and no advertising ID is shared — on devices where the consent screen in section 4 applies (the European Economic Area, the United Kingdom and Switzerland), and on devices where you have opted out under a US state privacy law (section 4). Once it is switched off on a device, it stays off on that device.</p>
+<h2>7. Invite friends</h2>
+<p>You can invite friends with your own 8-character invite code. When a new player joins with your code and finishes Level 1, you receive 200 coins. To run this, and to stop the reward being claimed more than once, the Game stores in Cloud Firestore:</p>
+<ul>
+<li>your invite code, the account it belongs to, the hashed device key of the phone it was created on, and when it was created</li>
+<li>each use of a code: the code, the inviting and the joining account, the joining phone's hashed device key, and whether the new player has finished Level 1</li>
+<li>for each device, its hashed device key, the account that first played on it, when, and whether the device was new to the Game</li>
+</ul>
+<p>A hashed device key is a one-way code made from an identifier of your device — on Android, the Android ID; on iPhone and iPad, a random identifier the Game keeps in your device's keychain. It cannot be turned back into that identifier.</p>
+<p>On Android, if you install the Game from a friend's invite link, the Game reads the link's referral details from Google Play (the Google Play Install Referrer service) to find the code, so you don't have to type it.</p>
+<p>When you share an invite, the Game opens your phone's own share menu. We don't see who you share it with.</p>
+<h2>8. Notifications</h2>
+<p>If you allow notifications, the Game schedules reminders on your device — for example, when your lives are full or a free spin is ready. They are created on your device, and no personal information is sent to us or anyone else to deliver them. You can turn them off at any time in your device's settings.</p>
+<h2>9. Purchases</h2>
+<p>Coin packs and other in-app purchases are processed by Google Play Billing or the Apple App Store. We never see or store your payment card, billing address, or any other payment detail — those go to Google or Apple, under their own privacy policies.</p>
+<p>We do keep a record of the coins a purchase awarded, so that the coins can be restored if you change device and so that a purchase is never credited twice. Firebase Analytics records that a purchase was made (section 5), and on iPhone and iPad so does Meta, where its measurement is switched on (section 6).</p>
+<h2>10. The services we use</h2>
+<p>The Game uses these third-party services, each of which has its own privacy policy:</p>
+<ul>
+<li>Google Firebase (Authentication, Firestore, Analytics) — sign-in, cloud save and analytics — <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></li>
+<li>Google AdMob — rewarded ads — <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+<li>Unity Ads (Unity Technologies) — rewarded ads, through AdMob mediation — <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">https://unity.com/legal/game-player-and-app-user-privacy-policy</a></li>
+<li>Google Ads — measuring our own advertising for the Game — <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+<li>Meta SDK (Meta Platforms) — measuring our own Facebook and Instagram ads — <a href="https://www.facebook.com/privacy/policy/">https://www.facebook.com/privacy/policy/</a></li>
+<li>Sign in with Google — sign-in with a Google account on Android, iPhone and iPad — <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+<li>Google Play Games and Google Play Services — Android sign-in and store services — <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+<li>Google Play Install Referrer — invite codes from invite links on Android — <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+<li>Apple (Sign in with Apple, App Store) — iOS sign-in and store services — <a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></li>
+<li>Unity — the game engine — <a href="https://unity.com/legal/privacy-policy">https://unity.com/legal/privacy-policy</a></li>
+</ul>
+<h2>11. How your information is used</h2>
+<p>To save and restore your progress across devices; to run the Game's features (lives, coins, boosters, the spin wheel, invites and notifications); to deliver and measure the rewarded ads you choose to watch; to measure how well our own advertising for the Game works; to prevent duplicate or fraudulent coin awards and invite rewards; to understand how the Game is used in aggregate; and to diagnose crashes and errors.</p>
+<h2>12. Sharing</h2>
+<p>We do not sell your personal information for money.</p>
+<p>Firebase processes data on our behalf, under our instructions.</p>
+<p>Our advertising partners are different, and we want to be plain about it: the advertising ID and ad-interaction data described in section 4 are shared with Google's advertising network and, when it competes for or shows an ad, with Unity Ads. They use them across apps to select and measure ads. Where Meta's measurement is switched on, the information in section 6 is shared with Meta. Some US state laws treat this kind of sharing as a "sale" or "sharing" of personal information; the consent screen and the Ad privacy option described in section 4 let you control it.</p>
+<p>Information you give us by signing in (section 2) is not shared with advertising partners.</p>
+<p>We may also disclose information where the law requires it.</p>
+<h2>13. Your rights and choices</h2>
+<ul>
+<li>Play without signing in. Sign-in is optional.</li>
+<li>Change your ad choices in the Game (Settings → "i" → "Ad privacy", where shown), or by emailing us.</li>
+<li>Reset your advertising ID in your device settings, as described in section 4.</li>
+<li>Turn notifications off at any time in your device settings.</li>
+<li>Reset your progress from inside the Game. This is a gameplay feature — it clears your progress but keeps your account.</li>
+<li>Delete your account and the data stored with it: while signed in, tap the @ button, then "Delete account". Instructions are also at <a href="https://sites.google.com/view/caramelcrushers-data-deletion">https://sites.google.com/view/caramelcrushers-data-deletion</a></li>
+<li>Request access to, correction of, or deletion of your data by emailing <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#104;&#117;&#98;&#104;&#97;&#109;&#118;&#105;&#118;&#101;&#107;&#114;&#97;&#111;&#51;&#49;&#53;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#115;&#104;&#117;&#98;&#104;&#97;&#109;&#118;&#105;&#118;&#101;&#107;&#114;&#97;&#111;&#51;&#49;&#53;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a>. We respond within 30 days.</li>
+</ul>
+<p>Depending on where you live, you may have further rights under laws such as the GDPR, the UK GDPR, the CCPA/CPRA, or India's Digital Personal Data Protection Act. Contact us and we will honour them.</p>
+<h2>14. How long we keep it</h2>
+<ul>
+<li>Your cloud save and player account, including a guest account and any sign-in information: kept while the account exists. Deleted immediately when you delete your account or ask us to, except for the records below that prevent fraud.</li>
+<li>Coin transaction records: up to 90 days, then removed automatically — also after you delete your account, so that a purchase or reward cannot be claimed twice.</li>
+<li>Invite records and hashed device keys (section 7): kept while the invite feature runs, also after you delete your account, because they stop the same account or device claiming a new-player reward twice. They contain no name or email.</li>
+<li>Analytics and diagnostic data: retained by Google under its own retention schedules, up to 24 months.</li>
+<li>Data received by our advertising partners (Google, Unity and Meta): kept under their own retention policies.</li>
+<li>Aggregated statistics that cannot identify you: may be kept indefinitely.</li>
+</ul>
+<h2>15. Security</h2>
+<p>Data is encrypted in transit. Cloud records are protected by Firebase security rules that let an account read and write only its own data, except that the Game can look up an invite code to check it when someone enters it. No system is perfectly secure, and we cannot guarantee absolute security.</p>
+<h2>16. International transfers</h2>
+<p>The Game's data is stored and processed on servers run by Google and, for advertising and ad measurement, by Unity and Meta. These may be located outside your country, and data protection laws there may differ from those where you live. Where the law requires it, these transfers rely on appropriate safeguards — such as the European Commission's standard contractual clauses — and we obtain any consent required for the transfer.</p>
+<h2>17. Children</h2>
+<p>The Game is intended for players aged 13 and over and is not directed to children under 13. We do not knowingly collect personal information from children under 13. If you believe a child under 13 has provided us with personal information, email <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#104;&#117;&#98;&#104;&#97;&#109;&#118;&#105;&#118;&#101;&#107;&#114;&#97;&#111;&#51;&#49;&#53;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#115;&#104;&#117;&#98;&#104;&#97;&#109;&#118;&#105;&#118;&#101;&#107;&#114;&#97;&#111;&#51;&#49;&#53;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a> and we will delete it.</p>
+<p>In some countries the age at which a young person can consent to data processing is higher than 13. Where that applies, the consent screen described in section 4 is shown and consent is required before personalised ads are served.</p>
+<h2>18. Changes to this policy</h2>
+<p>We may update this policy. The effective date at the top changes when we do, and material changes will be notified inside the Game or on its store listing. Continuing to play after an update means you accept the revised policy.</p>
+<h2>19. Contact</h2>
+<p>VIVEKRAO GOVINDARAO ANNA<br>
+<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#104;&#117;&#98;&#104;&#97;&#109;&#118;&#105;&#118;&#101;&#107;&#114;&#97;&#111;&#51;&#49;&#53;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#115;&#104;&#117;&#98;&#104;&#97;&#109;&#118;&#105;&#118;&#101;&#107;&#114;&#97;&#111;&#51;&#49;&#53;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a></p>
+    </article>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <nav aria-label="Footer">
+      <a href="./">Home</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="https://sites.google.com/view/caramelcrushers-data-deletion">Delete your account</a>
+      <a href="mailto:shubhamvivekrao315@gmail.com">shubhamvivekrao315@gmail.com</a>
+    </nav>
+    <p>&copy; 2026 Caramel Crushers</p>
+  </div>
+</footer>
+</body>
+</html>
